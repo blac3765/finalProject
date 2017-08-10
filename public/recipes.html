@@ -1,0 +1,12 @@
+<h1>Paste the web address for your recipe!<h1>
+
+    URL: <input type="text" name="url" ng-model="url">
+	<input type="button" value="Get Recipe" ng-click="getRecipe(url)">
+
+
+	<div ng-repeat="item in recipe.extendedIngredients">
+		<img ng-src="{{item.image}}">
+		{{item.originalString}}
+	</div>
+
+  <input type='button' value='Add Recipe' ng-click='addRecipe()'>

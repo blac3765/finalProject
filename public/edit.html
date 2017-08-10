@@ -1,0 +1,8 @@
+<h1>Edit Area</h1>
+
+<div ng-repeat="item in recipe.extendedIngredients">
+  <img ng-src="{{item.image}}">
+  {{item.originalString}} 
+</div>
+
+<input type='button' value='Save List' ng-click='saveList'>
